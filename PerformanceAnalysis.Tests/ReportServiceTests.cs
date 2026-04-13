@@ -1,8 +1,8 @@
-﻿using Moq;
+using Moq;
 using PerformanceAnalysis.Application.Reports;
 using PerformanceAnalysis.Infrastructure.Reports;
 using PerformanceAnalysis.Reports.GroupLeadersAndLaggards;
-using PerformanceAnalysis.Reports.StudentTestResult;
+using PerformanceAnalysis.Reports.StudentTestResults;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +19,7 @@ namespace PerformanceAnalysis.Tests
             // Arrange
             var expected = new List<GroupLeadersAndLaggardsItem>
             {
-                new() 
+                new()
                 {
                     GroupId = 1,
                     GroupName = "Group 1",

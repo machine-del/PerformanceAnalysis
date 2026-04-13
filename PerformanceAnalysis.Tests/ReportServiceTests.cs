@@ -52,9 +52,7 @@ namespace PerformanceAnalysis.Tests
                     It.Is<GroupLeadersAndLaggardsFilter>(f => f.DirectionId == 10 && f.CourseId == 5))
                 );
             mock.Verify(x => x.QueryAsync<GroupLeadersAndLaggardsItem>(
-                    It.Is<string>(sql => sql.Contains(
-                        "MAX(CASE WHEN ss.totalscore = gmm.max_score THEN ss.fullname END) AS leadername")
-                    ),
+                    It.Is<string>(sql => sql.Contains("CASE WHEN ss.totalscore = MaxScore THEN ss.fullname END")),
                     It.IsAny<object?>())
                 );
         }

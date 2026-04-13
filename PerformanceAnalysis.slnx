@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="PerformanceAnalysis.Tests/PerformanceAnalysis.Tests.csproj" Id="5492fa8e-e6e8-44ba-b380-efc399abf649" />
+  <Project Path="PerformanceAnalysis/PerformanceAnalysis.csproj" />
+</Solution>

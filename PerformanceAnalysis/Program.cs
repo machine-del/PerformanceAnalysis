@@ -107,6 +107,9 @@ namespace PerformanceAnalysis
             builder.Services.AddDbContext<AuthDbContext>(opt =>
                 opt.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
             builder.Services.AddScoped<IAuthServices, AuthService>();
+            builder.Services.AddScoped<IJwtAuthService, JwtAuthService>();
+            builder.Services.AddScoped<ICookieAuthService, CookieAuthService>();
+            builder.Services.AddScoped<IAuthServices, AuthService>();
             builder.Services.AddHttpContextAccessor();
 
             var app = builder.Build();

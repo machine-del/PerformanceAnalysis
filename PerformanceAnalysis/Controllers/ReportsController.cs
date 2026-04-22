@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PerformanceAnalysis.Application.Extensions;
 using PerformanceAnalysis.Application.Reports;
-using PerformanceAnalysis.Infrastructure.Auth.Extensions;
 using PerformanceAnalysis.Reports.DayOfWeekActivity;
 using PerformanceAnalysis.Reports.GroupLeadersAndLaggards;
 using PerformanceAnalysis.Reports.GroupTrend;
